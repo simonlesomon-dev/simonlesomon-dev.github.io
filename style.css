@@ -1,12 +1,25 @@
 h1 {
-    height: 10px;
+    color: black;
+
+}    
+h1::before{
+    color: red;
+    transition: .7s;  
+    }
+h6{
+    color: rgb(255, 81, 0);
+    font-size: 15pt;
 }
 h3
 {
     text-align:center;
+    align-items: center;
 }
-h7{
+h7
+{
     color:brown;
+    font-size: 15pt;
+    font-style: unset;
 }
 .insrt
 {
@@ -18,12 +31,81 @@ h7{
 body{
     background-color: rgba(0,109,0,0.28);
     font-family: Arial;
-    text-shadow: 0px 0px 12px rgba(0,0,0,0.91);
+    /*text-shadow: 0px 0px 12px rgba(0,0,0,0.91);*/
+    cursor:default;
 }
-footer{
 
-}
 .link{
     font-family: Arial;
     color:rgb(0,109,0);
+}
+nav{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    background-color:rgb(17, 32, 19);
+    border-radius: 34px 34px 34px 34px;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+    margin: 2px;
+    cursor: pointer;
+    width: calc(100%*5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+nav ul li:before{
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 1;
+    border-radius: 2px;
+    transition: .7s;
+}
+nav ul li:hover:before{
+    background: green;
+    opacity: 70%;
+    border-radius: 34px 34px 34px 34px;
+}
+nav ul li:hover a{
+    color: aliceblue;
+    transition: .5s;
+    border-radius: 20px;
+}
+nav ul li a{
+    color: green;
+    text-decoration: none;
+    z-index: 11;
+}
+hh:hover{
+    color: red;
+    transition: .5s;  
+}
+il:hover{
+background-color: yellow;
+transition: .5s;
+}
+.tuto
+{
+    width: 70%;
+}
+footer
+{
+    text-align: right;
 }
