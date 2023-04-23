@@ -1,6 +1,6 @@
 h1 {
     color: black;
-
+    text-align: center;
 }    
 h1::before{
     color: red;
@@ -103,9 +103,14 @@ transition: .5s;
 }
 .tuto
 {
-    width: 50%;
+    width: 400px;
+    border-radius: 13px 13px 13px 13px;
 }
 footer
 {
     text-align: right;
+}
+.iframe{
+    width: 110%;
+    height: 110%;
 }
